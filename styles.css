@@ -9,13 +9,7 @@ header {
   background: radial-gradient(134.58% 101.1% at 66.51% 79.36%, #2b2b2b 0%, #000 100%);
 }
 
-.start-page {
-  width: calc(100% - 256px);
-  height: 744px;
-  margin: 0 auto;
-}
-
-.product-cards {
+main {
   width: 100%;
   display: inline-flex;
   padding: 100px 128px;
@@ -25,7 +19,12 @@ header {
   background: radial-gradient(64.04% 69.77% at 50% 50%, #222325 0%, #181818 100%);
 }
 
-.header-menu-wraper {
+.container {
+  width: calc(100% - 256px);
+  margin: 0 auto;
+}
+
+.header-menu-wrapper {
   height: 95px;
 }
 
@@ -59,11 +58,9 @@ header {
 .slider-wrapper .slider {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .slider-wrapper .product-image {
-  width: 530.392px;
-  height: 489.496px;
+  height: 100%;
   flex-shrink: 0;
 }
 .slider-wrapper .description-content {
@@ -71,14 +68,50 @@ header {
   flex-direction: column;
   color: #fff;
 }
+.slider-wrapper .description-content h1 {
+  text-wrap: balance;
+}
+
+.product-image-wrapper {
+  width: 70%;
+}
 
 .description {
   width: 35%;
 }
+.description h1 {
+  color: var(--electric, #04c1c1);
+  font-family: Playfair Display;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 107%;
+}
+.description .description-content-p {
+  align-self: stretch;
+  color: var(--grey, #c8c8c8);
+  /* good-text */
+  font-family: Radio Canada;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%; /* 31.9px */
+}
+
+.explore-beverages {
+  color: var(--black, #111010);
+  font-family: Radio Canada;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .content-area {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
 }
 
 .explore-beverages-wrapper {
@@ -88,12 +121,15 @@ header {
   gap: 10px;
   background: var(--green, #63dea6);
   border: 0;
-  width: 50%;
+  width: 80%;
 }
 .explore-beverages-wrapper .explore-beverages {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+.explore-beverages-wrapper p {
+  margin-left: 15px;
 }
 
 .description-content-text {
@@ -102,10 +138,95 @@ header {
 }
 
 .description-content-text:last-child {
-  margin-bottom: 6px;
+  margin-bottom: px;
 }
 
 .description-content-text:first-child {
   margin-bottom: 0;
   padding: 0 15px;
+}
+
+.product-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.product-text h2 {
+  color: var(--white, #fff);
+  margin-right: 60px;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.7%;
+}
+.product-text p {
+  color: var(--white, #fff);
+  font-family: Radio Canada;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.product-item {
+  display: flex;
+  width: 75%;
+  min-width: 300px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-image: url(./imgs/Mask\ group.svg);
+  background-repeat: no-repeat;
+}
+.product-item div {
+  width: 100%;
+}
+.product-item div .product-item-title {
+  color: var(--white, #fff);
+  margin: 29px 0px 0px 30px;
+  font-family: Playfair Display;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.7%; /* 28.002px */
+}
+.product-item div #fstchld {
+  width: 100%;
+}
+.product-item div .product-item-img {
+  width: 66%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.product-browse {
+  height: 65px;
+  width: 100%;
+}
+
+.product-browse div {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+}
+.product-browse div p {
+  color: var(--white, #fff);
+  font-family: Radio Canada;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }/*# sourceMappingURL=styles.css.map */
