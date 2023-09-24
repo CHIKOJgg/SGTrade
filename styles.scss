@@ -11,12 +11,7 @@ header {
     #000 100%
   );
 }
-.start-page {
-  width: calc(100% - 256px);
-  height: 744px;
-  margin: 0 auto;
-}
-.product-cards {
+main {
   width: 100%;
   display: inline-flex;
   padding: 100px 128px;
@@ -29,7 +24,11 @@ header {
     #181818 100%
   );
 }
-.header-menu-wraper {
+.container {
+  width: calc(100% - 256px);
+  margin: 0 auto;
+}
+.header-menu-wrapper {
   height: 95px;
 }
 .header-menu {
@@ -64,25 +63,61 @@ header {
   .slider {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   .product-image {
-    width: 530.392px;
-    height: 489.496px;
+    height: 100%;
     flex-shrink: 0;
   }
   .description-content {
     display: flex;
     flex-direction: column;
     color: #fff;
+    h1 {
+      text-wrap: balance;
+    }
   }
+}
+.product-image-wrapper {
+  width: 70%;
 }
 .description {
   width: 35%;
+  h1 {
+    color: var(--electric, #04c1c1);
+
+    font-family: Playfair Display;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 107%;
+  }
+
+  .description-content-p {
+    align-self: stretch;
+    color: var(--grey, #c8c8c8);
+
+    /* good-text */
+    font-family: Radio Canada;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 145%; /* 31.9px */
+  }
+}
+.explore-beverages {
+  color: var(--black, #111010);
+
+  font-family: Radio Canada;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .content-area {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
 }
 .explore-beverages-wrapper {
   display: flex;
@@ -91,11 +126,14 @@ header {
   gap: 10px;
   background: var(--green, #63dea6);
   border: 0;
-  width: 50%;
+  width: 80%;
   .explore-beverages {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+  }
+  p {
+    margin-left: 15px;
   }
 }
 .description-content-text {
@@ -103,9 +141,91 @@ header {
   margin-bottom: 20px;
 }
 .description-content-text:last-child {
-  margin-bottom: 6px;
+  margin-bottom: px;
 }
 .description-content-text:first-child {
   margin-bottom: 0;
   padding: 0 15px;
+}
+.product-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  h2 {
+    color: var(--white, #fff);
+    margin-right: 60px;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 107.7%;
+  }
+  p {
+    color: var(--white, #fff);
+
+    font-family: Radio Canada;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 145%;
+  }
+}
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+.product-item {
+  display: flex;
+  width: 75%;
+  min-width: 300px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-image: url(./imgs/Mask\ group.svg);
+  background-repeat: no-repeat;
+  div {
+    width: 100%;
+    .product-item-title {
+      color: var(--white, #fff);
+      margin: 29px 0px 0px 30px;
+      font-family: Playfair Display;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 107.7%; /* 28.002px */
+    }
+    #fstchld {
+      width: 100%;
+    }
+    .product-item-img {
+      width: 66%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px auto;
+    }
+  }
+}
+
+.product-browse {
+  height: 65px;
+  width: 100%;
+}
+.product-browse div {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  p {
+    color: var(--white, #fff);
+    font-family: Radio Canada;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 }
