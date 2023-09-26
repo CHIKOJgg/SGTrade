@@ -365,4 +365,43 @@ main {
   font-weight: 400;
   line-height: normal;
   text-align: center;
+}
+
+.why-us-info-button {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  padding: 19px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--green, #63dea6);
+  justify-content: center;
+}
+.why-us-info-button .btn-txt {
+  color: var(--green, #63dea6);
+  font-family: Gotham Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.why-us-info-button-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+#globe-img {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#globe-img img {
+  position: relative;
+  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */
