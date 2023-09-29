@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,11 @@
 
 header {
   width: 100%;
-  background: radial-gradient(134.58% 101.1% at 66.51% 79.36%, #2b2b2b 0%, #000 100%);
+  background: radial-gradient(
+    134.58% 101.1% at 66.51% 79.36%,
+    #2b2b2b 0%,
+    #000 100%
+  );
 }
 
 main {
@@ -19,7 +23,11 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  background: radial-gradient(64.04% 69.77% at 50% 50%, #222325 0%, #181818 100%);
+  background: radial-gradient(
+    64.04% 69.77% at 50% 50%,
+    #222325 0%,
+    #181818 100%
+  );
 }
 
 .container {
@@ -52,7 +60,10 @@ main {
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
-  background: var(--electric-gradient, linear-gradient(262deg, #04c1c1 -1.66%, #9be3e3 -1.65%, #04c1c1 64.99%));
+  background: var(
+    --electric-gradient,
+    linear-gradient(262deg, #04c1c1 -1.66%, #9be3e3 -1.65%, #04c1c1 64.99%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -263,7 +274,10 @@ main {
 
 .why-us {
   width: 100%;
-  background: var(--main-dark-gradient, linear-gradient(217deg, #242627 1.99%, #161718 101.43%));
+  background: var(
+    --main-dark-gradient,
+    linear-gradient(217deg, #242627 1.99%, #161718 101.43%)
+  );
 }
 
 .why-us-content {
@@ -433,4 +447,129 @@ main {
 footer {
   height: 365px;
   background: var(--black, #111010);
-}/*# sourceMappingURL=styles.css.map */
+  background-image: url(./imgs/Mask\ group.png);
+  border: 0;
+}
+footer #footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 60px 0 0 0;
+}
+
+.main-info-container {
+  width: -moz-min-content;
+  width: min-content;
+}
+.main-info-container div h3 {
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+  margin-bottom: 15px;
+}
+.main-info-container div h2 {
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  align-self: stretch;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.main-info-additional div {
+  margin-bottom: 20px;
+  width: 50%;
+  display: flex;
+}
+.main-info-additional div span {
+  color: var(--grey, #c8c8c8);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 90.151px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.main-info-additional div p {
+  color: var(--white, #fff);
+  flex: 1 0 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.social-med-container {
+  display: flex;
+  width: 414px;
+  padding: 10px 75px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.social-med-container div div {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-info-container #additional-info {
+  display: flex;
+}
+
+.additional-info-list {
+  list-style: none;
+}
+.additional-info-list li div {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+}
+.additional-info-list li span {
+  color: var(--sky, #e2f3fd);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.catalog-menu #catalog {
+  display: flex;
+}
+.catalog-menu #catalog p {
+  color: var(--sky, #e2f3fd);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.catalog-menu .dropdown-add-info p {
+  color: var(--sky, #e2f3fd);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  padding: 5px 25px;
+  align-items: center;
+  gap: 10px;
+} /*# sourceMappingURL=styles.css.map */
