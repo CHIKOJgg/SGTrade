@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;700&family=Radio+Canada&display=swap");
+@keyframes headerMenuOP {
+  0% {
+    opacity: 0;
+    height: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+    display: flex;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +21,7 @@
 
 header {
   width: 100%;
-  background: radial-gradient(
-    134.58% 101.1% at 66.51% 79.36%,
-    #2b2b2b 0%,
-    #000 100%
-  );
+  background: radial-gradient(134.58% 101.1% at 66.51% 79.36%, #2b2b2b 0%, #000 100%);
 }
 
 main {
@@ -23,11 +31,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  background: radial-gradient(
-    64.04% 69.77% at 50% 50%,
-    #222325 0%,
-    #181818 100%
-  );
+  background: radial-gradient(64.04% 69.77% at 50% 50%, #222325 0%, #181818 100%);
 }
 
 .container {
@@ -36,7 +40,8 @@ main {
 }
 
 .header-menu-wrapper {
-  height: 95px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .header-menu {
@@ -60,10 +65,7 @@ main {
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
-  background: var(
-    --electric-gradient,
-    linear-gradient(262deg, #04c1c1 -1.66%, #9be3e3 -1.65%, #04c1c1 64.99%)
-  );
+  background: var(--electric-gradient, linear-gradient(262deg, #04c1c1 -1.66%, #9be3e3 -1.65%, #04c1c1 64.99%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -274,10 +276,7 @@ main {
 
 .why-us {
   width: 100%;
-  background: var(
-    --main-dark-gradient,
-    linear-gradient(217deg, #242627 1.99%, #161718 101.43%)
-  );
+  background: var(--main-dark-gradient, linear-gradient(217deg, #242627 1.99%, #161718 101.43%));
 }
 
 .why-us-content {
@@ -572,4 +571,97 @@ footer #footer-container {
   padding: 5px 25px;
   align-items: center;
   gap: 10px;
-} /*# sourceMappingURL=styles.css.map */
+}
+
+.header-menu-opened {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-menu-opened .contact-info {
+  display: flex;
+  align-items: flex-start;
+}
+.header-menu-opened .contact-info h3 {
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+.header-menu-opened .contact-info p {
+  color: var(--white, #fff);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+.header-menu-opened .contact-info div {
+  display: flex;
+  margin-right: 50px;
+}
+.header-menu-opened .navigation-buttons {
+  display: flex;
+  margin-bottom: 25px;
+}
+.header-menu-opened .navigation-buttons div {
+  margin-right: 2vw;
+}
+.header-menu-opened .navigation-buttons div a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #93e1ed;
+  font-family: Radio Canada;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header-menu-opened .navigation-buttons-item:last-child {
+  margin: 0;
+}
+.header-menu-opened .additional-navigate-buttons {
+  display: flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 51px;
+}
+.header-menu-opened .additional-navigate-buttons a {
+  color: #fff;
+  font-family: Radio Canada;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: normal;
+}
+
+.opened {
+  display: flex;
+  animation: headerMenuOP 0.3s;
+}
+
+.closed {
+  animation: headerMenuCl 0.3s;
+  display: none;
+}
+
+@keyframes headerMenuCl {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
