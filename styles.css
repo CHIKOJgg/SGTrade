@@ -13,6 +13,16 @@
     display: flex;
   }
 }
+@keyframes headerMenuCl {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -407,6 +417,7 @@ main {
   align-items: center;
   border-bottom: 2px solid var(--green, #63dea6);
   justify-content: center;
+  cursor: pointer;
 }
 .why-us-info-button .btn-txt {
   color: var(--green, #63dea6);
@@ -655,13 +666,88 @@ footer #footer-container {
   display: none;
 }
 
-@keyframes headerMenuCl {
-  0% {
-    opacity: 1;
-    display: flex;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
+.menu-button {
+  width: 35px;
+  height: 35px;
+}
+
+form {
+  width: -moz-min-content;
+  width: min-content;
+  background: var(--black, #111010);
+  display: none;
+}
+form .form-content-wrapper {
+  padding: 44px 45px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+form .form-content-wrapper .form-content {
+  display: flex;
+  flex-direction: column;
+}
+form .form-content-wrapper .form-content h3 {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.7%; /* 58.158px */
+  margin-bottom: 40px;
+}
+form .form-content-wrapper .form-content h3 span {
+  color: var(--electric, #04c1c1);
+  font-family: Playfair Display;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.7%;
+}
+form .form-content-wrapper .form-content p {
+  color: var(--grey, #c8c8c8);
+  /* good-text */
+  font-family: Radio Canada;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%; /* 31.9px */
+  margin-bottom: 40px;
+}
+form .form-content-wrapper .form-content input {
+  display: flex;
+  width: 387.421px;
+  padding: 18px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  margin-bottom: 20px;
+  color: #fff;
+}
+form .form-content-wrapper .form-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+form .form-content-wrapper .form-button-wrapper button {
+  padding: 19px 20px;
+  gap: 10px;
+  background: var(--green, #63dea6);
+}
+form .form-content-wrapper .form-button-wrapper button div {
+  display: flex;
+  justify-content: center;
+}
+form .form-content-wrapper .form-button-wrapper button div p {
+  color: var(--black, #111010);
+  /* button-text */
+  font-family: Radio Canada;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 10px;
 }/*# sourceMappingURL=styles.css.map */
