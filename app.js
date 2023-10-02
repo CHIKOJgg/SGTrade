@@ -4,7 +4,8 @@ const menuButton = document.querySelector('.menu-button');
 const menuButtonImg = document.querySelector('.menu-button-img');
 const headerMenu = document.querySelector('.header-menu-opened');
 const whyUsInfoButton = document.querySelector('#why-us-info-button');
-const form = document.querySelector('#form');
+const form = document.querySelector('.form');
+const formbutton = document.querySelector('.form-button');
 let isDropdownMenuOpened = menuButton.getAttribute('data-is-opened');
 console.log(form);
 console.log(whyUsInfoButton);
@@ -22,5 +23,8 @@ menuButton.addEventListener('click', function () {
   }
 });
 whyUsInfoButton.addEventListener('click', function () {
-  form.style.display = 'block';
+  form.classList.add('form-open');
+});
+formbutton.addEventListener('click', function () {
+  form.classList.remove('form-open');
 });
