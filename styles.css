@@ -750,4 +750,11 @@ form .form-content-wrapper .form-button-wrapper button div p {
   font-weight: 700;
   line-height: normal;
   margin-left: 10px;
+}
+
+.form-open {
+  display: block;
+  position: fixed;
+  top: 15vh;
+  right: 30vw;
 }/*# sourceMappingURL=styles.css.map */
