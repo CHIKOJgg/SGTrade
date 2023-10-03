@@ -672,6 +672,7 @@ footer {
   display: none;
 }
 .menu-button {
+  background-image: url(./imgs/closeCross.svg);
   width: 35px;
   height: 35px;
 }
@@ -718,6 +719,9 @@ form {
         font-weight: 300;
         line-height: 145%; /* 31.9px */
         margin-bottom: 40px;
+      }
+      #specify-your-request {
+        height: 142px;
       }
       input {
         display: flex;
